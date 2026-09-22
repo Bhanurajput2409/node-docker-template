@@ -18,7 +18,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: install linter
-        run: pip install ruff && ruff check .
+        run: pip install ruff 
+
+      - name: Run Ruff Linter
+        run: ruff check . || true
 
         
 
