@@ -5,7 +5,7 @@ export default () => {
     roots: ['test/'],
 
     // Disables CommonJS transforms (see https://jestjs.io/docs/ecmascript-modules)
-    : {},
+    transform: {},
 
     setupFilesAfterEnv: ['./testing/jestRedisMock.js'],
   };
