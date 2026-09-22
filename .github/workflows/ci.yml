@@ -17,6 +17,9 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: install linter
+        run: pip install ruff && ruff check .
+
         
 
 
