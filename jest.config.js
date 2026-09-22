@@ -1,4 +1,4 @@
-// https://jestjs.io/docs/configuration
+#// https://jestjs.io/docs/configuration
 export default () => {
   return {
     testEnvironment: 'node',
